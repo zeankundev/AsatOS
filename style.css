@@ -1,0 +1,135 @@
+body {
+    font-family: Inter !important;
+    background-image: url("bg.jpg");
+    overflow: hidden;
+  }
+  Header {
+    overflow: hidden;
+    width: 100%;
+    background-color: #3f3f3f;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    background: rgb(31,31,31);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(63,63,63,1) 100%);
+  }
+  .window {
+      height: 0px;
+      width: 0px;
+      display: none;
+  }
+  .header {
+     width: 600px;
+     height: 30px;
+     background-color: #3e3e3e;
+     cursor: move;
+     border: black solid 0.5px;
+  }
+  .content {
+     width: 600px;
+     margin: 0;
+     padding: 0;
+     height: 450px;
+     border: black solid 0.5px;
+  }
+  .headertext {
+      color: white;
+      background-color: #3e3e3e;
+      border: black solid 0px;
+      font-family: Inter;
+      font-size: 20px;
+      padding-top: 5px;
+      height: 30px;
+  }
+  .closebutton {
+      float: right;
+      background-color: #0084ff;
+      height: 100%;
+      width: 50px;
+      border: black solid 0px;
+      font-size: 20px;
+      color: white;
+  }
+  .closebutton:hover{
+      background-color: red;
+      border: black solid 0px;
+  
+  }
+  li {
+      float: left;
+      display: block;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav{
+  display: inline-block;
+  }
+  .sidebar2 {
+      height: 100%;
+      width:50px;
+      position:fixed!important;
+      z-index:1;
+      overflow:auto;
+      padding: 2.5px;
+      opacity: .60;
+      background-color: #3f3f3f;
+      display: flex;
+      flex-direction: column;
+  }
+  .menubutton2 {
+      background-color: #3f3f3f;
+      border: black solid 0px;
+      font-family: Inter;
+      color: black;
+      float: left;
+      text-align: left;
+      font-size: 15px
+  }
+  button {
+      padding: 2px;
+    }
+  .list {
+      width: 60%;
+      margin: auto;
+  }
+    .minimize {
+      float: right;
+      background-color: #3e3e3e;
+      height: 100%;
+      width: 50px;
+      border: black solid 0px;
+      font-size: 20px;
+      color: white;
+  }
+  .minimize:hover{
+      background-color: red;
+      border: black solid 0px;
+  
+  }
+    .menubuttonminimized {
+      background-color: #1d1d1d;
+      border: black solid 0px;
+      color: black;
+      float: left;
+      padding: 2.5px;
+      font-size: 15px;
+      height: 25px;
+      color: white;
+  }
+.OptionButton {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    background-color: #3f3f3f;
+    border: black solid 0px;
+    color: black;
+    float: left;
+}
+textarea {
+  font-size: 20px;
+  font-family: arial;
+  padding: 5px;
+}

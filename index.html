@@ -16,7 +16,7 @@
 
 <Header>
 
-<p style="color: white; float: left;" onclick="ToggleMenu()">Activities</p>&nbsp;
+<p style="color: white; float: left; cursor: default; user-select: none;" onclick="ToggleMenu()">Activities</p>&nbsp;
 
 <li><button onclick="minimize()" class="menubuttonminimized" id="minimizedfiles">&nbsp;Files&nbsp;</button></li>&nbsp;
 <li><button onclick="minimize2()" class="menubuttonminimized" id="minimizedmeme">&nbsp;Meme Maker&nbsp;</button></li>&nbsp;
@@ -85,6 +85,19 @@
     <div class="header"><button class="headertext"> GTK Playground</button><button onclick="Closetestwindow7()" class="closebutton"><i class="material-icons">close</i></button><button onclick="minimize8()" class="minimize"><i class="material-icons">minimize</i></button></div>
     <div class="content" style="background-color: #3e3e3e;">
         <button class="gtkButton">Hello World!</button>
+        <select class="gtkSelect">
+            <option>Please select a game</option>
+            <option>Memeforest</option>
+            <option>Five Nights at Sunat</option>
+            <option>Otnafriends</option>
+            <option>Gugol</option>
+            <option>YouSul</option>
+        </select>
+        <progress min="1" max="100" id="myBar" onclick="move()"></progress>
+        <p>To see the progress bar in action, click on it!</p>
+        <br>
+        <p>More playing components WIP</p>
+        <p>Best regards. zeankun.dev</p>
 </div></div>
 
 <div class="window" id="window6">
@@ -120,12 +133,18 @@
 
 <script>
 $( ".window" ).draggable({ handle: ".header" });
+var width = 0;
 document.getElementById("minimizedfiles").style.display = "none";
 document.getElementById("minimizedmeme").style.display = "none";
 document.getElementById("minimizednotes").style.display = "none";
 document.getElementById("minimizedmedia").style.display = "none";
 document.getElementById("minimizedstore").style.display = "none";
 document.getElementById("minimizedsettings").style.display = "none";
+function move() {
+    var elem = document.getElementById("myBar"); 
+    width = width + 10;
+    elem.value = width;
+}
 </script>
 <script type="text/javascript" src="note.js"></script>
 <script type="text/javascript" src="time.js"></script>

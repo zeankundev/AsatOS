@@ -9,7 +9,7 @@
     font-family: 'material-icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;
+    font-size: 15px;
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -21,7 +21,54 @@
 }
 /* gtk components style */
 .gtkButton {
-    border-radius: 5px;
+    border-radius: 10px;
+    border-width: 0px;
+    border-style: none;
+    border-color: none;
+    padding: 7px;
+    margin: 0px;
+    background-color: #3f3f3f;
+    color: #fff;
+    font-size: 12px;
+    font-family: Inter;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    cursor: default;
+    outline: none;
+    border: 1px solid #fff;
+}
+.gtkButton:hover {
+    background-color: #4f4f4f;
+    transition: all 0.2s ease-in-out;
+}
+progress {
+    -webkit-writing-mode: horizontal-tb !important;
+    appearance: none !important;
+    background-color: #4f4f4f !important;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 1em;
+    width: 10em;
+    vertical-align: -0.2em;
+}
+progress[value]::-webkit-progress-value {
+    background-color: #0084ff;
+    border-radius: 2px; 
+    transition: all 0.2s ease;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+  }
+p {
+    font-family: Inter;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    cursor: default;
+    outline: none;
+}
+.gtkSelect {
+    border-radius: 10px;
     border-width: 0px;
     border-style: none;
     border-color: none;
@@ -73,7 +120,7 @@ body {
     overflow: hidden;
     width: 100%;
     background-color: #3f3f3f;
-    height: 25px;
+    height: 20px;
     margin: 0;
     padding: 5px;
     background: rgb(31,31,31);
@@ -86,37 +133,40 @@ body {
   .header {
      width: 600px;
      height: 30px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
      background-color: #3e3e3e;
      cursor: move;
-     border: black solid 0.5px;
   }
   .content {
      width: 600px;
      margin: 0;
      padding: 0;
      height: 450px;
-     border: black solid 0.5px;
   }
   .headertext {
       color: white;
       background-color: #3e3e3e;
       border: black solid 0px;
       font-family: Inter;
-      font-size: 20px;
-      padding-top: 5px;
+      border-top-left-radius: 10px;
+      font-size: 15px;
+      padding-left: 5px;
       height: 30px;
   }
   .closebutton {
       float: right;
       background-color: #0084ff;
-      height: 100%;
-      width: 50px;
+      height: 20px;
+      width: 20px;
+      margin: 5px;
+      border-radius: 50%;
       border: black solid 0px;
       font-size: 20px;
       color: white;
   }
   .closebutton:hover{
-      background-color: red;
+      background-color: #2294ff;
       border: black solid 0px;
   
   }
@@ -160,14 +210,17 @@ body {
     .minimize {
       float: right;
       background-color: #3e3e3e;
-      height: 100%;
-      width: 50px;
+      height: 20px;
+      width: 20px;
+      margin: 5px;
+      margin-right: 10px;
+      border-radius: 50%;
       border: black solid 0px;
       font-size: 20px;
       color: white;
   }
   .minimize:hover{
-      background-color: red;
+      background-color: #4f4f4f;
       border: black solid 0px;
   
   }
